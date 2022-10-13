@@ -11,6 +11,8 @@ def is_prime(number): # determines if number is prime
     
 def primes(number_of_primes):
     list = []
+    if (number_of_primes<1):
+        raise ValueError("The number of primes must be greater than 1")
     i=2 # 2 is the first prime number
     while len(list)<number_of_primes: 
         if is_prime(i) == 1:
